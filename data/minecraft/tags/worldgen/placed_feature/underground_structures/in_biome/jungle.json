@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:monster_room",
+    "minecraft:monster_room_deep"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spring_lava",
+    "minecraft:brown_mushroom_normal",
+    "minecraft:red_mushroom_normal",
+    "minecraft:weeping_vines",
+    "minecraft:crimson_fungi",
+    "minecraft:crimson_forest_vegetation"
+  ]
+}

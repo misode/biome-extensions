@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spring_water",
+    "minecraft:spring_lava"
+  ]
+}

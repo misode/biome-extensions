@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:delta",
+    "minecraft:small_basalt_columns",
+    "minecraft:large_basalt_columns"
+  ]
+}
