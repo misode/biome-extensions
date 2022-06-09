@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/crimson_forest"
+    "air": "#minecraft:air/in_biome/crimson_forest",
+    "liquid": "#minecraft:liquid/in_biome/crimson_forest"
   },
   "downfall": 0.0,
   "effects": {
@@ -42,7 +43,8 @@
     "#minecraft:underground_ores/in_biome/crimson_forest",
     "#minecraft:underground_decoration/in_biome/crimson_forest",
     "#minecraft:fluid_springs/in_biome/crimson_forest",
-    "#minecraft:vegetal_decoration/in_biome/crimson_forest"
+    "#minecraft:vegetal_decoration/in_biome/crimson_forest",
+    "#minecraft:top_layer_modification/in_biome/crimson_forest"
   ],
   "precipitation": "none",
   "spawn_costs": {},

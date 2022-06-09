@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/jungle"
+    "air": "#minecraft:air/in_biome/jungle",
+    "liquid": "#minecraft:liquid/in_biome/jungle"
   },
   "downfall": 0.9,
   "effects": {

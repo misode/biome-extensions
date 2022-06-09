@@ -40,8 +40,9 @@ def main(version: str):
 			with open(f'tmp/mcmeta-{version}-data-json/data/minecraft/worldgen/biome/{biome_id}.json', 'r') as f:
 				biome = json.load(f)
 
-			for i in range(0, len(biome['features'])):
-				step_name = STEPS[i]
+			for i, step_name in enumerate(STEPS):
+				if len(biome['features']) < len(STEPS):
+					biome['features'] += [[] for _ in range(len(STEPS) - len(biome['features']))]
 				placed_features = biome['features'][i]
 				biome['features'][i] = f'#minecraft:{step_name}/in_biome/{biome_id}'
 
@@ -54,8 +55,8 @@ def main(version: str):
 				with open(f'{tag_folder}/{biome_id}.json', 'w') as f:
 					json.dump(tag_contents, f, indent=2)
 
-			for carver_step in biome['carvers']:
-				carvers = biome['carvers'][carver_step]
+			for carver_step in ['air', 'liquid']:
+				carvers = biome['carvers'].get(carver_step, [])
 				biome['carvers'][carver_step] = f'#minecraft:{carver_step}/in_biome/{biome_id}'
 
 				tag_contents = {

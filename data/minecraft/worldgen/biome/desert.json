@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/desert"
+    "air": "#minecraft:air/in_biome/desert",
+    "liquid": "#minecraft:liquid/in_biome/desert"
   },
   "downfall": 0.0,
   "effects": {

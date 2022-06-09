@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/mangrove_swamp"
+    "air": "#minecraft:air/in_biome/mangrove_swamp",
+    "liquid": "#minecraft:liquid/in_biome/mangrove_swamp"
   },
   "downfall": 0.9,
   "effects": {

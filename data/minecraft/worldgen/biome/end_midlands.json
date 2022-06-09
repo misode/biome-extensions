@@ -1,5 +1,8 @@
 {
-  "carvers": {},
+  "carvers": {
+    "air": "#minecraft:air/in_biome/end_midlands",
+    "liquid": "#minecraft:liquid/in_biome/end_midlands"
+  },
   "downfall": 0.5,
   "effects": {
     "fog_color": 10518688,
@@ -13,7 +16,19 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "features": [],
+  "features": [
+    "#minecraft:raw_generation/in_biome/end_midlands",
+    "#minecraft:lakes/in_biome/end_midlands",
+    "#minecraft:local_modifications/in_biome/end_midlands",
+    "#minecraft:underground_structures/in_biome/end_midlands",
+    "#minecraft:surface_structures/in_biome/end_midlands",
+    "#minecraft:strongholds/in_biome/end_midlands",
+    "#minecraft:underground_ores/in_biome/end_midlands",
+    "#minecraft:underground_decoration/in_biome/end_midlands",
+    "#minecraft:fluid_springs/in_biome/end_midlands",
+    "#minecraft:vegetal_decoration/in_biome/end_midlands",
+    "#minecraft:top_layer_modification/in_biome/end_midlands"
+  ],
   "precipitation": "none",
   "spawn_costs": {},
   "spawners": {

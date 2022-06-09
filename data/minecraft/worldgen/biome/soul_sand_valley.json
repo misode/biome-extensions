@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/soul_sand_valley"
+    "air": "#minecraft:air/in_biome/soul_sand_valley",
+    "liquid": "#minecraft:liquid/in_biome/soul_sand_valley"
   },
   "downfall": 0.0,
   "effects": {
@@ -42,7 +43,8 @@
     "#minecraft:underground_ores/in_biome/soul_sand_valley",
     "#minecraft:underground_decoration/in_biome/soul_sand_valley",
     "#minecraft:fluid_springs/in_biome/soul_sand_valley",
-    "#minecraft:vegetal_decoration/in_biome/soul_sand_valley"
+    "#minecraft:vegetal_decoration/in_biome/soul_sand_valley",
+    "#minecraft:top_layer_modification/in_biome/soul_sand_valley"
   ],
   "precipitation": "none",
   "spawn_costs": {

@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/basalt_deltas"
+    "air": "#minecraft:air/in_biome/basalt_deltas",
+    "liquid": "#minecraft:liquid/in_biome/basalt_deltas"
   },
   "downfall": 0.0,
   "effects": {
@@ -40,7 +41,10 @@
     "#minecraft:surface_structures/in_biome/basalt_deltas",
     "#minecraft:strongholds/in_biome/basalt_deltas",
     "#minecraft:underground_ores/in_biome/basalt_deltas",
-    "#minecraft:underground_decoration/in_biome/basalt_deltas"
+    "#minecraft:underground_decoration/in_biome/basalt_deltas",
+    "#minecraft:fluid_springs/in_biome/basalt_deltas",
+    "#minecraft:vegetal_decoration/in_biome/basalt_deltas",
+    "#minecraft:top_layer_modification/in_biome/basalt_deltas"
   ],
   "precipitation": "none",
   "spawn_costs": {},

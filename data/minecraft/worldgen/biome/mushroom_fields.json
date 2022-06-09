@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/mushroom_fields"
+    "air": "#minecraft:air/in_biome/mushroom_fields",
+    "liquid": "#minecraft:liquid/in_biome/mushroom_fields"
   },
   "downfall": 1.0,
   "effects": {

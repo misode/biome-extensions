@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/stony_shore"
+    "air": "#minecraft:air/in_biome/stony_shore",
+    "liquid": "#minecraft:liquid/in_biome/stony_shore"
   },
   "downfall": 0.3,
   "effects": {

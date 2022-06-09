@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/birch_forest"
+    "air": "#minecraft:air/in_biome/birch_forest",
+    "liquid": "#minecraft:liquid/in_biome/birch_forest"
   },
   "downfall": 0.6,
   "effects": {

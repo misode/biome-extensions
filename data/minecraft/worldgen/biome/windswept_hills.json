@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/windswept_hills"
+    "air": "#minecraft:air/in_biome/windswept_hills",
+    "liquid": "#minecraft:liquid/in_biome/windswept_hills"
   },
   "downfall": 0.3,
   "effects": {

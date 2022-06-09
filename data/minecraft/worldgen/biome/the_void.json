@@ -1,5 +1,8 @@
 {
-  "carvers": {},
+  "carvers": {
+    "air": "#minecraft:air/in_biome/the_void",
+    "liquid": "#minecraft:liquid/in_biome/the_void"
+  },
   "downfall": 0.5,
   "effects": {
     "fog_color": 12638463,

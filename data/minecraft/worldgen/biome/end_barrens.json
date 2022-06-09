@@ -1,5 +1,8 @@
 {
-  "carvers": {},
+  "carvers": {
+    "air": "#minecraft:air/in_biome/end_barrens",
+    "liquid": "#minecraft:liquid/in_biome/end_barrens"
+  },
   "downfall": 0.5,
   "effects": {
     "fog_color": 10518688,
@@ -13,7 +16,19 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "features": [],
+  "features": [
+    "#minecraft:raw_generation/in_biome/end_barrens",
+    "#minecraft:lakes/in_biome/end_barrens",
+    "#minecraft:local_modifications/in_biome/end_barrens",
+    "#minecraft:underground_structures/in_biome/end_barrens",
+    "#minecraft:surface_structures/in_biome/end_barrens",
+    "#minecraft:strongholds/in_biome/end_barrens",
+    "#minecraft:underground_ores/in_biome/end_barrens",
+    "#minecraft:underground_decoration/in_biome/end_barrens",
+    "#minecraft:fluid_springs/in_biome/end_barrens",
+    "#minecraft:vegetal_decoration/in_biome/end_barrens",
+    "#minecraft:top_layer_modification/in_biome/end_barrens"
+  ],
   "precipitation": "none",
   "spawn_costs": {},
   "spawners": {

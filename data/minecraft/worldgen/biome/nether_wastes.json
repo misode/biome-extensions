@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/nether_wastes"
+    "air": "#minecraft:air/in_biome/nether_wastes",
+    "liquid": "#minecraft:liquid/in_biome/nether_wastes"
   },
   "downfall": 0.0,
   "effects": {
@@ -36,7 +37,8 @@
     "#minecraft:underground_ores/in_biome/nether_wastes",
     "#minecraft:underground_decoration/in_biome/nether_wastes",
     "#minecraft:fluid_springs/in_biome/nether_wastes",
-    "#minecraft:vegetal_decoration/in_biome/nether_wastes"
+    "#minecraft:vegetal_decoration/in_biome/nether_wastes",
+    "#minecraft:top_layer_modification/in_biome/nether_wastes"
   ],
   "precipitation": "none",
   "spawn_costs": {},

@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/frozen_peaks"
+    "air": "#minecraft:air/in_biome/frozen_peaks",
+    "liquid": "#minecraft:liquid/in_biome/frozen_peaks"
   },
   "downfall": 0.9,
   "effects": {

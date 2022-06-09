@@ -1,5 +1,8 @@
 {
-  "carvers": {},
+  "carvers": {
+    "air": "#minecraft:air/in_biome/small_end_islands",
+    "liquid": "#minecraft:liquid/in_biome/small_end_islands"
+  },
   "downfall": 0.5,
   "effects": {
     "fog_color": 10518688,
@@ -14,7 +17,17 @@
     "water_fog_color": 329011
   },
   "features": [
-    "#minecraft:raw_generation/in_biome/small_end_islands"
+    "#minecraft:raw_generation/in_biome/small_end_islands",
+    "#minecraft:lakes/in_biome/small_end_islands",
+    "#minecraft:local_modifications/in_biome/small_end_islands",
+    "#minecraft:underground_structures/in_biome/small_end_islands",
+    "#minecraft:surface_structures/in_biome/small_end_islands",
+    "#minecraft:strongholds/in_biome/small_end_islands",
+    "#minecraft:underground_ores/in_biome/small_end_islands",
+    "#minecraft:underground_decoration/in_biome/small_end_islands",
+    "#minecraft:fluid_springs/in_biome/small_end_islands",
+    "#minecraft:vegetal_decoration/in_biome/small_end_islands",
+    "#minecraft:top_layer_modification/in_biome/small_end_islands"
   ],
   "precipitation": "none",
   "spawn_costs": {},

@@ -1,5 +1,8 @@
 {
-  "carvers": {},
+  "carvers": {
+    "air": "#minecraft:air/in_biome/end_highlands",
+    "liquid": "#minecraft:liquid/in_biome/end_highlands"
+  },
   "downfall": 0.5,
   "effects": {
     "fog_color": 10518688,
@@ -23,7 +26,8 @@
     "#minecraft:underground_ores/in_biome/end_highlands",
     "#minecraft:underground_decoration/in_biome/end_highlands",
     "#minecraft:fluid_springs/in_biome/end_highlands",
-    "#minecraft:vegetal_decoration/in_biome/end_highlands"
+    "#minecraft:vegetal_decoration/in_biome/end_highlands",
+    "#minecraft:top_layer_modification/in_biome/end_highlands"
   ],
   "precipitation": "none",
   "spawn_costs": {},

@@ -1,5 +1,8 @@
 {
-  "carvers": {},
+  "carvers": {
+    "air": "#minecraft:air/in_biome/the_end",
+    "liquid": "#minecraft:liquid/in_biome/the_end"
+  },
   "downfall": 0.5,
   "effects": {
     "fog_color": 10518688,
@@ -18,7 +21,13 @@
     "#minecraft:lakes/in_biome/the_end",
     "#minecraft:local_modifications/in_biome/the_end",
     "#minecraft:underground_structures/in_biome/the_end",
-    "#minecraft:surface_structures/in_biome/the_end"
+    "#minecraft:surface_structures/in_biome/the_end",
+    "#minecraft:strongholds/in_biome/the_end",
+    "#minecraft:underground_ores/in_biome/the_end",
+    "#minecraft:underground_decoration/in_biome/the_end",
+    "#minecraft:fluid_springs/in_biome/the_end",
+    "#minecraft:vegetal_decoration/in_biome/the_end",
+    "#minecraft:top_layer_modification/in_biome/the_end"
   ],
   "precipitation": "none",
   "spawn_costs": {},

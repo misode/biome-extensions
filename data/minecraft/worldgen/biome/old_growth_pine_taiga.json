@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/old_growth_pine_taiga"
+    "air": "#minecraft:air/in_biome/old_growth_pine_taiga",
+    "liquid": "#minecraft:liquid/in_biome/old_growth_pine_taiga"
   },
   "downfall": 0.8,
   "effects": {

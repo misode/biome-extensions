@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/jagged_peaks"
+    "air": "#minecraft:air/in_biome/jagged_peaks",
+    "liquid": "#minecraft:liquid/in_biome/jagged_peaks"
   },
   "downfall": 0.9,
   "effects": {

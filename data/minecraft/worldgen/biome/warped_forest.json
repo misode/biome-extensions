@@ -1,6 +1,7 @@
 {
   "carvers": {
-    "air": "#minecraft:air/in_biome/warped_forest"
+    "air": "#minecraft:air/in_biome/warped_forest",
+    "liquid": "#minecraft:liquid/in_biome/warped_forest"
   },
   "downfall": 0.0,
   "effects": {
@@ -42,7 +43,8 @@
     "#minecraft:underground_ores/in_biome/warped_forest",
     "#minecraft:underground_decoration/in_biome/warped_forest",
     "#minecraft:fluid_springs/in_biome/warped_forest",
-    "#minecraft:vegetal_decoration/in_biome/warped_forest"
+    "#minecraft:vegetal_decoration/in_biome/warped_forest",
+    "#minecraft:top_layer_modification/in_biome/warped_forest"
   ],
   "precipitation": "none",
   "spawn_costs": {
