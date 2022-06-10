@@ -81,6 +81,7 @@ def write_json(path: str, contents):
 	os.makedirs(f'data/minecraft/{dir}', exist_ok=True)
 	with open(f'data/minecraft/{path}.json', 'w') as f:
 		json.dump(contents, f, indent=2)
+		f.write('\n')
 
 
 def get_dimension(biome_id: str):
