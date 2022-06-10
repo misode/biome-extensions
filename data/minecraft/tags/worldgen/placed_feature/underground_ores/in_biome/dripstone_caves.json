@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    {
+      "id": "#minecraft:underground_ores/in_overworld",
+      "required": false
+    },
     "minecraft:ore_dirt",
     "minecraft:ore_gravel",
     "minecraft:ore_granite_upper",

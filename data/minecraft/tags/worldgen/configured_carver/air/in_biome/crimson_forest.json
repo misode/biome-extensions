@@ -1,4 +1,10 @@
 {
   "replace": false,
-  "values": "minecraft:nether_cave"
+  "values": [
+    {
+      "id": "#minecraft:air/in_nether",
+      "required": false
+    },
+    "minecraft:nether_cave"
+  ]
 }

@@ -1,4 +1,9 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    {
+      "id": "#minecraft:raw_generation/in_overworld",
+      "required": false
+    }
+  ]
 }

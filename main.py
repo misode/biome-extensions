@@ -20,6 +20,10 @@ STEPS = [
 	'top_layer_modification',
 ]
 
+NETHER_BIOMES = ['basalt_deltas', 'crimson_forest', 'nether_wastes', 'soul_sand_valley', 'warped_forest']
+END_BIOMES = ['end_barrens', 'end_highlands', 'end_midlands', 'small_end_islands', 'the_end']
+MISC_BIOMES = ['the_void']
+
 @click.command()
 @click.option('--version', '-v')
 def main(version: str):
@@ -40,38 +44,55 @@ def main(version: str):
 			with open(f'tmp/mcmeta-{version}-data-json/data/minecraft/worldgen/biome/{biome_id}.json', 'r') as f:
 				biome = json.load(f)
 
+			dimension_id = get_dimension(biome_id)
+
 			for i, step_name in enumerate(STEPS):
 				if len(biome['features']) < len(STEPS):
 					biome['features'] += [[] for _ in range(len(STEPS) - len(biome['features']))]
-				placed_features = biome['features'][i]
-				biome['features'][i] = f'#minecraft:{step_name}/in_biome/{biome_id}'
+				features: list = biome['features'][i]
+				if type(features) == str:
+					features = [features]
+				if dimension_id is not None:
+					features.insert(0, { "id": f'#minecraft:{step_name}/in_{dimension_id}', "required": False })
 
-				tag_contents = {
+				write_json(f'tags/worldgen/placed_feature/{step_name}/in_biome/{biome_id}', {
 					'replace': False,
-					'values': placed_features,
-				}
-				tag_folder = f'data/minecraft/tags/worldgen/placed_feature/{step_name}/in_biome'
-				os.makedirs(tag_folder, exist_ok=True)
-				with open(f'{tag_folder}/{biome_id}.json', 'w') as f:
-					json.dump(tag_contents, f, indent=2)
+					'values': features,
+				})
+				biome['features'][i] = f'#minecraft:{step_name}/in_biome/{biome_id}'
 
 			for carver_step in ['air', 'liquid']:
 				carvers = biome['carvers'].get(carver_step, [])
-				biome['carvers'][carver_step] = f'#minecraft:{carver_step}/in_biome/{biome_id}'
-
-				tag_contents = {
+				if type(carvers) == str:
+					carvers = [carvers]
+				if dimension_id is not None:
+					carvers.insert(0, { "id": f'#minecraft:{carver_step}/in_{dimension_id}', "required": False })
+				write_json(f'tags/worldgen/configured_carver/{carver_step}/in_biome/{biome_id}', {
 					'replace': False,
 					'values': carvers,
-				}
-				tag_folder = f'data/minecraft/tags/worldgen/configured_carver/{carver_step}/in_biome'
-				os.makedirs(tag_folder, exist_ok=True)
-				with open(f'{tag_folder}/{biome_id}.json', 'w') as f:
-					json.dump(tag_contents, f, indent=2)
+				})
+				biome['carvers'][carver_step] = f'#minecraft:{carver_step}/in_biome/{biome_id}'
 
-			biome_folder = f'data/minecraft/worldgen/biome'
-			os.makedirs(biome_folder, exist_ok=True)
-			with open(f'{biome_folder}/{biome_id}.json', 'w') as f:
-				json.dump(biome, f, indent=2)
+			write_json(f'worldgen/biome/{biome_id}', biome)
+
+
+def write_json(path: str, contents):
+	dir = path[:path.rindex('/')]
+	os.makedirs(f'data/minecraft/{dir}', exist_ok=True)
+	with open(f'data/minecraft/{path}.json', 'w') as f:
+		json.dump(contents, f, indent=2)
+
+
+def get_dimension(biome_id: str):
+	if biome_id in NETHER_BIOMES:
+		return 'nether'
+	elif biome_id in END_BIOMES:
+		return 'end'
+	elif biome_id not in MISC_BIOMES:
+		return 'overworld'
+	else:
+		return None
+
 
 if __name__ == '__main__':
 	main()

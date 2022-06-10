@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    {
+      "id": "#minecraft:underground_decoration/in_nether",
+      "required": false
+    },
     "minecraft:spring_open",
     "minecraft:patch_fire",
     "minecraft:patch_soul_fire",

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    {
+      "id": "#minecraft:vegetal_decoration/in_overworld",
+      "required": false
+    },
     "minecraft:glow_lichen",
     "minecraft:flower_forest_flowers",
     "minecraft:trees_flower_forest",

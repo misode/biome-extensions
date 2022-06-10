@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    {
+      "id": "#minecraft:underground_structures/in_overworld",
+      "required": false
+    },
     "minecraft:fossil_upper",
     "minecraft:fossil_lower",
     "minecraft:monster_room",
