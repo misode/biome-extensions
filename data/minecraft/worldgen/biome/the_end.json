@@ -1,20 +1,19 @@
 {
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "sky_color": 0,
+    "fog_color": 10518688,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
   "carvers": {
     "air": "#minecraft:air/in_biome/the_end",
     "liquid": "#minecraft:liquid/in_biome/the_end"
-  },
-  "downfall": 0.5,
-  "effects": {
-    "fog_color": 10518688,
-    "mood_sound": {
-      "block_search_extent": 8,
-      "offset": 2.0,
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000
-    },
-    "sky_color": 0,
-    "water_color": 4159204,
-    "water_fog_color": 329011
   },
   "features": [
     "#minecraft:raw_generation/in_biome/the_end",
@@ -29,24 +28,26 @@
     "#minecraft:vegetal_decoration/in_biome/the_end",
     "#minecraft:top_layer_modification/in_biome/the_end"
   ],
-  "precipitation": "none",
-  "spawn_costs": {},
   "spawners": {
-    "ambient": [],
-    "axolotls": [],
-    "creature": [],
-    "misc": [],
     "monster": [
       {
         "type": "minecraft:enderman",
-        "maxCount": 4,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 4
       }
     ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
     "underground_water_creature": [],
+    "water_creature": [],
     "water_ambient": [],
-    "water_creature": []
+    "misc": []
   },
-  "temperature": 0.5
+  "spawn_costs": {},
+  "precipitation": "none",
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "category": "the_end"
 }

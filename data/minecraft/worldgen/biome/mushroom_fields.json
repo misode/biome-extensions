@@ -1,20 +1,19 @@
 {
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "sky_color": 7842047,
+    "fog_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
   "carvers": {
     "air": "#minecraft:air/in_biome/mushroom_fields",
     "liquid": "#minecraft:liquid/in_biome/mushroom_fields"
-  },
-  "downfall": 1.0,
-  "effects": {
-    "fog_color": 12638463,
-    "mood_sound": {
-      "block_search_extent": 8,
-      "offset": 2.0,
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000
-    },
-    "sky_color": 7842047,
-    "water_color": 4159204,
-    "water_fog_color": 329011
   },
   "features": [
     "#minecraft:raw_generation/in_biome/mushroom_fields",
@@ -29,38 +28,40 @@
     "#minecraft:vegetal_decoration/in_biome/mushroom_fields",
     "#minecraft:top_layer_modification/in_biome/mushroom_fields"
   ],
-  "precipitation": "rain",
-  "spawn_costs": {},
   "spawners": {
-    "ambient": [
-      {
-        "type": "minecraft:bat",
-        "maxCount": 8,
-        "minCount": 8,
-        "weight": 10
-      }
-    ],
-    "axolotls": [],
+    "monster": [],
     "creature": [
       {
         "type": "minecraft:mooshroom",
-        "maxCount": 8,
+        "weight": 8,
         "minCount": 4,
-        "weight": 8
+        "maxCount": 8
       }
     ],
-    "misc": [],
-    "monster": [],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "axolotls": [],
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "maxCount": 6,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 6
       }
     ],
+    "water_creature": [],
     "water_ambient": [],
-    "water_creature": []
+    "misc": []
   },
-  "temperature": 0.9
+  "spawn_costs": {},
+  "precipitation": "rain",
+  "temperature": 0.9,
+  "downfall": 1.0,
+  "category": "mushroom"
 }
