@@ -38,7 +38,7 @@ def main(version: str):
 	zip = zipfile.ZipFile('tmp/data-json.zip')
 
 	for file in zip.namelist():
-		if match := re.match('mcmeta-1.19.4-data-json/data/minecraft/worldgen/biome/([a-z0-9_]+).json$', file):
+		if match := re.match(f'mcmeta-{version}-data-json/data/minecraft/worldgen/biome/([a-z0-9_]+).json$', file):
 			biome_id = match[1]
 			zip.extract(file, path='tmp')
 			with open(f'tmp/mcmeta-{version}-data-json/data/minecraft/worldgen/biome/{biome_id}.json', 'r') as f:
