@@ -37,6 +37,10 @@ def main(version: str):
 		f.write(content)
 	zip = zipfile.ZipFile('tmp/data-json.zip')
 
+	zip.extract(f'mcmeta-{version}-data-json/pack.mcmeta', path='tmp')
+	with open(f'tmp/mcmeta-{version}-data-json/pack.mcmeta') as f:
+		pack_format = json.load(f)["pack"]["pack_format"]
+
 	for file in zip.namelist():
 		if match := re.match(f'mcmeta-{version}-data-json/data/minecraft/worldgen/biome/([a-z0-9_]+).json$', file):
 			biome_id = match[1]
@@ -61,17 +65,29 @@ def main(version: str):
 				})
 				biome['features'][i] = f'#minecraft:{step_name}/in_biome/{biome_id}'
 
-			for carver_step in ['air', 'liquid']:
-				carvers = biome['carvers'].get(carver_step, [])
+			if pack_format >= 49: # since 1.21.2
+				carvers = biome['carvers']
 				if type(carvers) == str:
 					carvers = [carvers]
 				if dimension_id is not None:
-					carvers.insert(0, { "id": f'#minecraft:{carver_step}/in_{dimension_id}', "required": False })
-				write_json(f'tags/worldgen/configured_carver/{carver_step}/in_biome/{biome_id}', {
+					carvers.insert(0, { "id": f'#minecraft:in_{dimension_id}', "required": False })
+				write_json(f'tags/worldgen/configured_carver/in_biome/{biome_id}', {
 					'replace': False,
 					'values': carvers,
 				})
-				biome['carvers'][carver_step] = f'#minecraft:{carver_step}/in_biome/{biome_id}'
+				biome['carvers'] = f'#minecraft:in_biome/{biome_id}'
+			else: # before 1.21.2
+				for carver_step in ['air', 'liquid']:
+					carvers = biome['carvers'].get(carver_step, [])
+					if type(carvers) == str:
+						carvers = [carvers]
+					if dimension_id is not None:
+						carvers.insert(0, { "id": f'#minecraft:{carver_step}/in_{dimension_id}', "required": False })
+					write_json(f'tags/worldgen/configured_carver/{carver_step}/in_biome/{biome_id}', {
+						'replace': False,
+						'values': carvers,
+					})
+					biome['carvers'][carver_step] = f'#minecraft:{carver_step}/in_biome/{biome_id}'
 
 			write_json(f'worldgen/biome/{biome_id}', biome)
 

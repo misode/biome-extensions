@@ -1,8 +1,6 @@
 # Biome Extensions
 > Standard that modifies the vanilla biome definitions to use tags for placed features and carvers. This allows multiple data packs to add features to a vanilla biome and maintain compatibility.
 
-*Currently targeting: 1.19*
-
 ## Usage
 1. Download or clone this repository
 2. Copy and merge the `data` folder with your project, or use it to start a new project.
