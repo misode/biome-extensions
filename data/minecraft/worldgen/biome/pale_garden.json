@@ -1,31 +1,34 @@
 {
-  "carvers": "#minecraft:in_biome/windswept_forest",
-  "downfall": 0.3,
+  "carvers": "#minecraft:in_biome/pale_garden",
+  "downfall": 0.8,
   "effects": {
-    "fog_color": 12638463,
+    "fog_color": 8484720,
+    "foliage_color": 8883574,
+    "grass_color": 7832178,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "music_volume": 1.0,
-    "sky_color": 8233727,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "music": [],
+    "music_volume": 0.0,
+    "sky_color": 12171705,
+    "water_color": 7768221,
+    "water_fog_color": 5597568
   },
   "features": [
-    "#minecraft:raw_generation/in_biome/windswept_forest",
-    "#minecraft:lakes/in_biome/windswept_forest",
-    "#minecraft:local_modifications/in_biome/windswept_forest",
-    "#minecraft:underground_structures/in_biome/windswept_forest",
-    "#minecraft:surface_structures/in_biome/windswept_forest",
-    "#minecraft:strongholds/in_biome/windswept_forest",
-    "#minecraft:underground_ores/in_biome/windswept_forest",
-    "#minecraft:underground_decoration/in_biome/windswept_forest",
-    "#minecraft:fluid_springs/in_biome/windswept_forest",
-    "#minecraft:vegetal_decoration/in_biome/windswept_forest",
-    "#minecraft:top_layer_modification/in_biome/windswept_forest"
+    "#minecraft:raw_generation/in_biome/pale_garden",
+    "#minecraft:lakes/in_biome/pale_garden",
+    "#minecraft:local_modifications/in_biome/pale_garden",
+    "#minecraft:underground_structures/in_biome/pale_garden",
+    "#minecraft:surface_structures/in_biome/pale_garden",
+    "#minecraft:strongholds/in_biome/pale_garden",
+    "#minecraft:underground_ores/in_biome/pale_garden",
+    "#minecraft:underground_decoration/in_biome/pale_garden",
+    "#minecraft:fluid_springs/in_biome/pale_garden",
+    "#minecraft:vegetal_decoration/in_biome/pale_garden",
+    "#minecraft:top_layer_modification/in_biome/pale_garden"
   ],
   "has_precipitation": true,
   "spawn_costs": {},
@@ -39,38 +42,7 @@
       }
     ],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:sheep",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 12
-      },
-      {
-        "type": "minecraft:pig",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:chicken",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:cow",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:llama",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 5
-      }
-    ],
+    "creature": [],
     "misc": [],
     "monster": [
       {
@@ -133,5 +105,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.2
+  "temperature": 0.7
 }
