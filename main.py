@@ -65,7 +65,18 @@ def main(version: str):
 				})
 				biome['features'][i] = f'#minecraft:{step_name}/in_biome/{biome_id}'
 
-			if pack_format >= 49: # since 1.21.2
+			if pack_format >= 108: # since 26.3
+				carvers = biome['carvers']
+				if type(carvers) == str:
+					carvers = [carvers]
+				if dimension_id is not None:
+					carvers.insert(0, { "id": f'#minecraft:in_{dimension_id}', "required": False })
+				write_json(f'tags/worldgen/carver/in_biome/{biome_id}', {
+					'replace': False,
+					'values': carvers,
+				})
+				biome['carvers'] = f'#minecraft:in_biome/{biome_id}'
+			elif pack_format >= 49: # since 1.21.2
 				carvers = biome['carvers']
 				if type(carvers) == str:
 					carvers = [carvers]
